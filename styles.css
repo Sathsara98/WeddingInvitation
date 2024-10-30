@@ -102,6 +102,24 @@ button:hover {
     background-color: #004080;
 }
 
+/* countdown */
+#countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+#countdown li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+
+
+
+
 @media screen and (max-width:768px) {
     #image .container {
         margin: 0 10vw;
@@ -109,5 +127,13 @@ button:hover {
 
     #image .name {
         margin: 2vh 0;
+    }
+
+    #countdown li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    #countdown li span {
+        font-size: calc(3.375rem * var(--smaller));
     }
 }
