@@ -77,11 +77,11 @@
 
 
         <form id="responseForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <label for="Name">Name:</label>
+            <input type="text" id="Name" name="Name" required>
 
-            <label for="response">Response:</label>
-            <select id="response" name="response">
+            <label for="Response">Response:</label>
+            <select id="Response" name="Response">
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
             </select>
@@ -170,7 +170,7 @@
         const formData = new FormData(this);
 
         // Send the data to the Google Apps Script web app URL
-        fetch('https://script.google.com/macros/s/AKfycbzd31tk7QbC_bxKMEP1v_VoyhjyHjJr74nTkLBQcKBcxV-h_RjfruFe59QzdQDDuS_8/exec', { // Replace with your Google Apps Script web app URL
+        fetch('https://script.google.com/macros/s/AKfycbwAWFu26Tiz74A9gi8V5mO3yaB_DVow20j9HMNryH5bVAJ9a-3HAYYH5k6QOIih_agD/exec', { // Replace with your Google Apps Script web app URL
             method: 'POST',
             body: formData
         })
