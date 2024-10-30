@@ -76,7 +76,7 @@
     <section id="confirmation">
 
 
-        <form id="confirmationForm">
+        <form id="responseForm">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -98,6 +98,7 @@
             <textarea id="message" name="message" rows="4"></textarea>
             <button type="submit">Submit</button>
         </form>
+        <div id="message"></div>
     </section>
 
     <!-- Section 8: Countdown -->
@@ -161,30 +162,31 @@
 
 
 
-    document.getElementById("confirmationForm").addEventListener("submit", async function (event) {
-        event.preventDefault();
+    // script.js
+    document.getElementById('responseForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
 
-        const name = document.getElementById("name").value;
-        const guestResponse = document.getElementById("response").value;
+        // Create a FormData object from the form
+        const formData = new FormData(this);
 
-        const formData = { name, response: guestResponse };
-
-        try {
-            const result = await fetch("https://script.google.com/macros/s/AKfycbzqGbR-YNFmo8BpEIhfENnxAxndQEK8cugx9cSBE75dIU0q0KLWUkGIQRIJAuSUAvwsww/exec", {
-                method: "POST",
-                body: JSON.stringify(formData),
-                headers: { "Content-Type": "application/json" }
+        // Send the data to the Google Apps Script web app URL
+        fetch('https://script.google.com/macros/s/AKfycbzd31tk7QbC_bxKMEP1v_VoyhjyHjJr74nTkLBQcKBcxV-h_RjfruFe59QzdQDDuS_8/exec', { // Replace with your Google Apps Script web app URL
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.result === 'success') {
+                    alert('Thank you! Your response has been submitted successfully.');
+                    document.getElementById('responseForm').reset(); // Clear the form
+                } else {
+                    alert('There was an error submitting your response. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('There was a problem with the submission. Please try again.');
             });
-
-            if (result.ok) {
-                alert("Thank you! Your response has been recorded.");
-            } else {
-                alert("There was an error. Please try again.");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-            alert("An error occurred while submitting your response.");
-        }
     });
 
 </script>
