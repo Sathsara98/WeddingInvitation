@@ -116,7 +116,12 @@ button:hover {
     font-size: 4.5rem;
 }
 
-
+#submitButton:disabled {
+    background-color: #cccccc;
+    /* Gray */
+    color: #666666;
+    cursor: not-allowed;
+}
 
 
 

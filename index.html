@@ -76,7 +76,7 @@
     <section id="confirmation">
 
 
-        <form id="responseForm">
+        <form id="responseForm" onsubmit="disableButton()">
             <div>
                 <label for="Name">Name</label>
                 <input type="text" id="Name" name="Name" required>
@@ -84,23 +84,17 @@
 
             <div>
                 <label for="Response">Will you come?</label>
-                <!-- <select id="Response" name="Response">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                </select> -->
                 <div>
-                    <input type="radio" id="Response1" name="Response" value="Yes">
-                    <label for="age1">Yes, I will</label><br>
+                    <input type="radio" id="Response1" name="Response" value="Yes" required>
+                    <label for="Response1">Yes, I will</label><br>
                     <input type="radio" id="Response2" name="Response" value="Unfortunately">
-                    <label for="age2">Unfortunately, I am not</label><br>
+                    <label for="Response2">Unfortunately, I am not</label><br>
                     <input type="radio" id="Response3" name="Response" value="later">
-                    <label for="age3">I will tell you bit later</label><br><br>
+                    <label for="Response3">I will tell you a bit later</label><br><br>
                 </div>
-
             </div>
 
-
-            <button type="submit">Submit</button>
+            <button type="submit" id="submitButton">Submit</button>
         </form>
     </section>
 
@@ -202,6 +196,11 @@
                 alert('There was a problem with the submission. Please try again.');
             });
     });
+
+    function disableButton() {
+        const button = document.getElementById("submitButton");
+        button.disabled = true;
+    }
 
 </script>
 
