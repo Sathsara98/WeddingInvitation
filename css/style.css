@@ -11161,4 +11161,16 @@ a.text-dark:focus {
   .about-text p {
     font-size: 12px;
   }
+
+  #event h5 {
+    font-size: 12px;
+  }
+
+  .outfit-wrapper p {
+    font-size: 12px;
+  }
+
+  .outfit-wrapper h4 {
+    font-size: 14px;
+  }
 }
