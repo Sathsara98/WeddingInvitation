@@ -11173,4 +11173,12 @@ a.text-dark:focus {
   .outfit-wrapper h4 {
     font-size: 14px;
   }
+
+  .timeline img {
+    width: 100%;
+  }
+
+  .outfit-wrapper img {
+    width: 100%;
+  }
 }
