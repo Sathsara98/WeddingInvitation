@@ -2,206 +2,527 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>Sathsara & Ian Wedding Invitation</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
 
-    <link href="https://fonts.cdnfonts.com/css/sunsetof" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
-    <!-- Section 1: Image -->
-    <section id="image">
-        <div class="container">
-            <div class="col">
-                <div class="col-6 date">
-                    <div class="day"><b>05.06.2024</b></div>
-                    <div class="date-text">Date</div>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <!-- <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <h1 class="font-secondary text-white mb-n2">Jack <span class="text-primary">&</span> Rose</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#story" class="nav-item nav-link">Story</a>
+                <a href="#gallery" class="nav-item nav-link">Gallery</a>
+            </div>
+            <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+                <h1 class="font-secondary text-white mb-n2">Jack <span class="text-primary">&</span> Rose</h1>
+            </a>
+            <div class="navbar-nav mr-auto py-0">
+                <a href="#family" class="nav-item nav-link">Family</a>
+                <a href="#event" class="nav-item nav-link">Event</a>
+                <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav> -->
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 pb-5" id="home">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/img3.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4 " data-aos="fade-down">
+                                Sathsara & Ian</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4 "
+                                data-aos="fade-up">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0 "
+                                    style="letter-spacing: 2px;">We're getting married</h3>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6 place">
-                    <div class="plc"><b>WATERS EDGE</b></div>
-                    <div class="date-text">Place</div>
+                <!-- <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                    <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Sathsara & Ian</h1>
+                            <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                                <h3 class="text-uppercase font-weight-normal text-white m-0"
+                                    style="letter-spacing: 2px;">We're getting married</h3>
+                            </div>
+                            <button type="button" class="btn-play mx-auto" data-toggle="modal"
+                                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-prev-icon mt-3"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                    <span class="carousel-control-next-icon mt-3"></span>
+                </div>
+            </a> -->
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+    <!-- Invite start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 200px;" data-aos="fade-left">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100 invite-img" src="img/img2.jpg"
+                            style="object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5 invite " data-aos="fade-right">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h1 class="font-secondary display-4">Dear Family & Friends</h1>
+
+                        <p>This summer a very special and happy event is going to happen - <b>Our Wedding</b>. It is
+                            impossible to imagine this day without our closest people. Thus, we are
+                            happy to invite you to
+                            join and share this wonderful occassion with us.</p>
+
+                        <a href="" class="btn btn-primary mt-1">RSVP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Invite End -->
+
+    <!-- Save date Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="save-date text-center  p-4 p-lg-5 my-lg-5 " data-aos="zoom-in">
+                <h6 class="text-uppercase  mb-3" style="letter-spacing: 3px;">Save the date</h6>
+                <h1 class="font-secondary display-4">25 August 2025</h1>
+
+
+                <div id="countdown">
+                    <ul>
+                        <li><span id="days"></span>days</li>
+                        <li><span id="hours"></span>Hours</li>
+                        <li><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Save date End -->
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3 ">
+            <div class="section-title position-relative text-center " data-aos="fade-down">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Timeline</h6>
+                <h1 class="font-secondary display-4">Our Wedding Event</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right  " data-aos="fade-right" data-aos-delay="300">
+                        <img class="img-fluid mr-md-3" src="img/event start.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left " data-aos=" fade-left" data-aos-delay="300">
+                        <div class=" h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+
+                            <h4 class="mb-2">Event Start</h4>
+                            <p class="m-0">Begin arriving at the venue</p>
+                            <p class="mb-0 text-primary">9.30 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right " data-aos="fade-right" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Couple’s Welcome</h4>
+                            <p class="m-0">Bride and groom arrive and warmly welcome the guests</p>
+                            <p class="mb-0 text-primary">9.45 AM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <img class="img-fluid ml-md-3" src="img/welcome.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <img class="img-fluid mr-md-3" src="img/registration.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Marriage Registration</h4>
+                            <p class="m-0">Official signing of the marriage certificate</p>
+                            <p class="mb-0 text-primary">10.45 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Poruwa Ceremony</h4>
+                            <p class="m-0">Traditional Sri Lankan wedding ceremony begins</p>
+                            <p class="mb-0 text-primary">11.00 AM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <img class="img-fluid ml-md-3" src="img/poruwa.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <img class="img-fluid mr-md-3" src="img/oil lamp.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Lighting of the Oil Lamp</h4>
+                            <p class="m-0">Symbolizing blessings, unity, and a bright future</p>
+                            <p class="mb-0 text-primary">11.30 AM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Bar Opens</h4>
+                            <p class="m-0">Beverages and cocktails available for guests</p>
+                            <p class="mb-0 text-primary">12.00 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <img class="img-fluid ml-md-3" src="img/openbar.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right " data-aos="fade-right" data-aos-delay="300">
+                        <img class="img-fluid mr-md-3" src="img/couple dance.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Couple’s First Dance</h4>
+                            <p class="m-0">A romantic first dance to mark the celebration</p>
+                            <p class="mb-0 text-primary">12.15 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Lunch</h4>
+                            <p class="m-0">A delicious meal to enjoy with family and friends</p>
+                            <p class="mb-0 text-primary">12.30 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <img class="img-fluid ml-md-3" src="img/lunch.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <img class="img-fluid mr-md-3" src="img/dancefloor.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2"> Dancing Floor Opens</h4>
+                            <p class="m-0">Time to hit the floor and celebrate with joy!</p>
+                            <p class="mb-0 text-primary">1.30 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-6 text-center text-md-right" data-aos="fade-right" data-aos-delay="300">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">End of the Event</h4>
+                            <p class="m-0">Thank you for being part of our special day!</p>
+                            <p class="mb-0 text-primary">3.30 PM</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 text-center text-md-left" data-aos="fade-left" data-aos-delay="300">
+                        <img class="img-fluid ml-md-3" src="img/end.jpg" alt="">
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+    <!-- Gallery Start -->
+    <div class="container-fluid bg-gallery" id="gallery" style="padding: 120px 0; margin: 90px 0;" data-aos="fade-up">
+        <div class="section-title position-relative text-center" style="margin-bottom: 120px;" data-aos="fade-down"
+            data-aos-delay="600">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+            <h1 class="font-secondary display-4 text-white">Our Photo Gallery</h1>
+            <i class="far fa-heart text-white"></i>
+        </div>
+        <div class="owl-carousel gallery-carousel">
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/1-gallery.jpg" alt="">
+                <a href="img/1-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-eye text-white"></i>
+                </a>
+            </div>
+            <!-- <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/2-gallery.jpg" alt="">
+                <a href="img/2-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-plus text-white"></i>
+                </a>
+            </div> -->
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/3-gallery.jpg" alt="">
+                <a href="img/3-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-eye text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/4-gallery.jpg" alt="">
+                <a href="img/4-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-eye text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/5-gallery.jpg" alt="">
+                <a href="img/5-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-eye text-white"></i>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <img class="img-fluid w-100" src="img/6-gallery.jpg" alt="">
+                <a href="img/6-gallery.jpg" data-lightbox="gallery">
+                    <i class="fa fa-2x fa-eye text-white"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- Gallery End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center" data-aos="fade-down">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Dress Code</h6>
+                <h1 class="font-secondary display-4">Style with Elegance</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center" data-aos="fade-up">
+                    <h5 class="font-weight-normal text-muted ">We would be very happy if your outfit is in the
+                        colors of the wedding theme
+                    </h5>
                 </div>
 
             </div>
-            <div>
-                <hr>
-            </div>
-        </div>
-
-        <div class="name">
-            <p>Sathsara & Ian</p>
-        </div>
-        <div class="invite-para">
-            <p class="p1">We are inviting you to our wedding!</p>
-            <p class="p2">Let's together celebrate the best day of our life</p>
-        </div>
-        </div>
-
-        <img src="images/image1.png" alt="Event Image">
-    </section>
-
-    <!-- Section 2: Invite -->
-    <section id="invite">
-        <h2>You're Invited!</h2>
-        <p>Join us for an unforgettable event...</p>
-    </section>
-
-    <!-- Section 3: Event Timeline -->
-    <section id="timeline">
-        <h2>Event Timeline</h2>
-        <ul>
-            <li>10:00 AM - Registration</li>
-            <li>11:00 AM - Opening Ceremony</li>
-            <!-- Add more timeline items here -->
-        </ul>
-    </section>
-
-    <!-- Section 4: Dress Code -->
-    <section id="dress-code">
-        <h2>Dress Code</h2>
-        <p>Wear formal attire...</p>
-    </section>
-
-    <!-- Section 5: Photo Gallery -->
-    <section id="gallery">
-        <h2>Photo Gallery</h2>
-        <!-- Add your photo thumbnails here -->
-    </section>
-
-    <!-- Section 6: Confirmation -->
-    <section id="confirmation">
-
-
-        <form id="responseForm" onsubmit="disableButton()">
-            <div>
-                <label for="Name">Name</label>
-                <input type="text" id="Name" name="Name" required>
-            </div>
-
-            <div>
-                <label for="Response">Will you come?</label>
-                <div>
-                    <input type="radio" id="Response1" name="Response" value="Yes, I will" required>
-                    <label for="Response1">Yes, I will</label><br>
-                    <input type="radio" id="Response2" name="Response" value="Unfortunately, I am not">
-                    <label for="Response2">Unfortunately, I am not</label><br>
-                    <input type="radio" id="Response3" name="Response" value="I will tell you a bit later">
-                    <label for="Response3">I will tell you a bit later</label><br><br>
+            <div class="row justify-content-center">
+                <div class="clr-wrapper d-flex justify-content-center mb-5 mt-5" data-aos="flip-left">
+                    <div class="clr clr-1 mr-2"></div>
+                    <div class="clr clr-2 mr-2"></div>
+                    <div class="clr clr-3 mr-2"></div>
+                    <div class="clr clr-4"></div>
                 </div>
             </div>
-
-            <button type="submit" id="submitButton">Submit</button>
-        </form>
-    </section>
-
-    <!-- Section 7: Inquiry -->
-    <section id="inquiry">
-        <!-- <h2>Have Questions?</h2>
-        <form>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-            <button type="submit">Submit</button>
-        </form>
-        <div id="message"></div> -->
-    </section>
-
-    <!-- Section 8: Countdown -->
-    <section id="countdown">
-        <div class="container">
-
-            <div id="countdown">
-                <ul>
-                    <li><span id="days"></span>days</li>
-                    <li><span id="hours"></span>Hours</li>
-                    <li><span id="minutes"></span>Minutes</li>
-                    <li><span id="seconds"></span>Seconds</li>
-                </ul>
+            <div class="row outfit-wrapper">
+                <div class="col-md-6 border-right border-primary" data-aos="fade-right" data-aos-delay="300">
+                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                        <img class="img-fluid mb-4" src="img/Mensuite.jpg" alt="">
+                        <h4 class="mb-3">Men</h4>
+                        <p class="mb-2">Formal Wear | Indian-Inspired Attire</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="600">
+                    <div class="text-center text-md-left ml-md-3">
+                        <img class="img-fluid mb-4" src="img/saree.PNG" alt="">
+                        <h4 class="mb-3">Women</h4>
+                        <p class="mb-2">Saree | Lehenga | Frock / Gown / Maxi Dress | Shalwar </p>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </section>
+    </div>
+    <!-- Event End -->
 
-    <!-- Section 9: Location -->
-    <section id="location">
-        <div>
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5 " id="rsvp" data-aos="fade-up">
+        <div class="container py-5 rsvp-wrapper">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join to Our Big Day</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form id="responseForm" onsubmit="disableButton()">
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Your Name" id="Name" name="Name" required />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="No. of Guests" id="Guests" name="Guests" required />
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group col-sm-12 pt-3 respond">
+                                    <label for="Response" class="d-flex">Will you come?</label>
+                                    <div class="check-wrapper">
+                                        <div><input type="radio" id="Response1" name="Response" value="Yes, I will"
+                                                required>
+                                            <label for="Response1">Yes, I will</label><br>
+                                        </div>
+
+                                        <div><input type="radio" id="Response2" name="Response"
+                                                value="Unfortunately, I am not">
+                                            <label for="Response2">Unfortunately, I am not</label><br>
+                                        </div>
+
+                                        <div><input type="radio" id="Response3" name="Response"
+                                                value="I will tell you a bit later">
+                                            <label for="Response3">I will tell you a bit later</label><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit"
+                                    id="submitButton">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+    <!--location start-->
+    <div class="container-fluid py-5" id="location" data-aos="zoom-in">
+        <div class="container py-5">
             <iframe class="map-container"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.8727846608213!2d79.90914567584852!3d6.905812418600779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae259fa5863aa65%3A0xe33d2d1f01284b9b!2sWaters%20Edge%20-%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1730284679513!5m2!1sen!2slk"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-    </section>
+    </div>
+    <!--location end-->
 
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5 footer" id="contact" style="margin-top: 90px;">
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center mb-0">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i
+            class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-
-<script>
-    (function () {
-        const second = 1000,
-            minute = second * 60,
-            hour = minute * 60,
-            day = hour * 24;
-
-        // Set target date to June 6, 2025
-        const targetDate = "06/05/2025";
-        const countDown = new Date(targetDate).getTime();
-
-        const x = setInterval(function () {
-            const now = new Date().getTime();
-            const distance = countDown - now;
-
-            document.getElementById("days").innerText = Math.floor(distance / (day));
-            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour));
-            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute));
-            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-            // When date is reached, display a message
-            if (distance < 0) {
-                document.getElementById("headline").innerText = "Today is the day!";
-                document.getElementById("countdown").style.display = "none";
-                document.getElementById("content").style.display = "block";
-                clearInterval(x);
-            }
-        }, 1000);
-    })();
-
-
-
-
-    // script.js
-    document.getElementById('responseForm').addEventListener('submit', function (event) {
-        event.preventDefault(); // Prevent the default form submission
-
-        // Create a FormData object from the form
-        const formData = new FormData(this);
-
-        // Send the data to the Google Apps Script web app URL
-        fetch('https://script.google.com/macros/s/AKfycbwAWFu26Tiz74A9gi8V5mO3yaB_DVow20j9HMNryH5bVAJ9a-3HAYYH5k6QOIih_agD/exec', { // Replace with your Google Apps Script web app URL
-            method: 'POST',
-            body: formData
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.result === 'success') {
-                    alert('Thank you! Your response has been submitted successfully.');
-                    document.getElementById('responseForm').reset(); // Clear the form
-                } else {
-                    alert('There was an error submitting your response. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was a problem with the submission. Please try again.');
-            });
-    });
-
-    function disableButton() {
-        const button = document.getElementById("submitButton");
-        button.disabled = true;
-    }
-
-</script>
 
 </html>
