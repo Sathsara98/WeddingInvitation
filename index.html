@@ -385,6 +385,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="clr-wrapper d-flex justify-content-center mb-5 mt-5" data-aos="flip-left">
+                    <div class="clr clr-0 mr-2"></div>
                     <div class="clr clr-1 mr-2"></div>
                     <div class="clr clr-2 mr-2"></div>
                     <div class="clr clr-3 mr-2"></div>
@@ -425,13 +426,24 @@
                     <div class="text-center">
                         <form id="responseForm" onsubmit="disableButton()">
                             <div class="form-row">
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-4">
                                     <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
-                                        placeholder="Your Name" id="Name" name="Name" required />
+                                        placeholder="First Name" id="Name" name="FName" required />
                                 </div>
-                                <div class="form-group col-sm-6">
+                                <div class="form-group col-sm-4">
                                     <input type="text" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Last Name" id="Name" name="LName" required />
+                                </div>
+                                <div class="form-group col-sm-4">
+                                    <input type="number" class="form-control bg-secondary border-0 py-4 px-3"
                                         placeholder="No. of Guests" id="Guests" name="Guests" required />
+                                </div>
+                            </div>
+                            <div class="form-row" id="phoneField" style="display: none;">
+                                <div class="form-group col-sm-4">
+                                    <input type="tel" class="form-control bg-secondary border-0 py-4 px-3"
+                                        placeholder="Phone Number" name="PhoneNumber" id="PhoneNumber"
+                                        pattern="[0-9]{10}" maxlength="10" required />
                                 </div>
                             </div>
                             <div class="form-row">
@@ -446,16 +458,17 @@
 
                                         <div><input type="radio" id="Response2" name="Response"
                                                 value="Unfortunately, I am not">
-                                            <label for="Response2">Unfortunately, I am not</label><br>
+                                            <label for="Response2">Unfortunately, I cannot</label><br>
                                         </div>
 
                                         <div><input type="radio" id="Response3" name="Response"
                                                 value="I will tell you a bit later">
-                                            <label for="Response3">I will tell you a bit later</label><br><br>
+                                            <label for="Response3">I will let you know later</label><br><br>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
 
                             <div>
                                 <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit"

@@ -182,6 +182,8 @@ function disableButton() {
         dots: false,
         loop: true,
         nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
         navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
@@ -203,6 +205,29 @@ function disableButton() {
                 items: 5
             }
         }
+    });
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const laterOption = document.getElementById("Response3");
+        const phoneField = document.getElementById("phoneField");
+
+        const allOptions = document.getElementsByName("Response");
+
+        allOptions.forEach(option => {
+            option.addEventListener("change", function () {
+                if (laterOption.checked) {
+                    phoneField.style.display = "flex";
+                } else {
+                    phoneField.style.display = "none";
+                    document.getElementById("PhoneNumber").value = ''; // Clear phone if hidden
+                }
+            });
+        });
     });
 
 })(jQuery);

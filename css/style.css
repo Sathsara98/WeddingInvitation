@@ -10919,7 +10919,7 @@ a.text-dark:focus {
 }
 
 .bg-gallery {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/2-gallery.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/2-gallery-min.jpg), no-repeat center center;
   background-size: cover;
 }
 
@@ -11042,6 +11042,11 @@ a.text-dark:focus {
   width: 80px;
   height: 80px;
   border-radius: 3px;
+}
+
+.clr-wrapper .clr-0 {
+  background: #ffffff;
+  border: 0.2px solid #ececec;
 }
 
 .clr-wrapper .clr-1 {
@@ -11186,5 +11191,10 @@ a.text-dark:focus {
 
   .outfit-wrapper img {
     width: 100%;
+  }
+
+  .clr-wrapper .clr {
+    width: 65px;
+    height: 65px;
   }
 }
