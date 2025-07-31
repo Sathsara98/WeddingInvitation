@@ -54,19 +54,21 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById('responseForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); // Prevent default form submission
+
+    const submitButton = document.getElementById("submitButton");
+    const submitText = document.getElementById("submitText");
+    const submitLoader = document.getElementById("submitLoader");
+
+    // Disable the button and show loader
+    submitButton.disabled = true;
+    submitLoader.style.display = 'inline-block';
+    submitText.textContent = 'Submitting...';
 
     // Create a FormData object from the form
     const formData = new FormData(this);
 
-    // Log all form data key-value pairs to console
-    console.log('Form data being submitted:');
-    for (const [key, value] of formData.entries()) {
-        console.log(key + ': ' + value);
-    }
-
-    // Send the data to the Google Apps Script web app URL
-    fetch('https://script.google.com/macros/s/AKfycbwAWFu26Tiz74A9gi8V5mO3yaB_DVow20j9HMNryH5bVAJ9a-3HAYYH5k6QOIih_agD/exec', { // Replace with your Google Apps Script web app URL
+    fetch('https://script.google.com/macros/s/AKfycbwAWFu26Tiz74A9gi8V5mO3yaB_DVow20j9HMNryH5bVAJ9a-3HAYYH5k6QOIih_agD/exec', {
         method: 'POST',
         body: formData
     })
@@ -82,8 +84,15 @@ document.getElementById('responseForm').addEventListener('submit', function (eve
         .catch(error => {
             console.error('Error:', error);
             alert('There was a problem with the submission. Please try again.');
+        })
+        .finally(() => {
+            // Hide loader and re-enable button regardless of result
+            submitButton.disabled = false;
+            submitLoader.style.display = 'none';
+            submitText.textContent = 'Submit';
         });
 });
+
 function closePopup() {
     document.getElementById('successPopup').style.display = 'none';
     document.getElementById("submitButton").disabled = false; // Re-enable submit button

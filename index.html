@@ -471,8 +471,13 @@
 
 
                             <div>
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit"
-                                    id="submitButton">Submit</button>
+                                <button
+                                    class="btn btn-primary font-weight-bold py-3 px-5 d-flex align-items-center justify-content-center"
+                                    type="submit" id="submitButton">
+                                    <span id="submitText">Submit</span>
+                                    <span id="submitLoader" class="spinner-border spinner-border-sm ml-2" role="status"
+                                        aria-hidden="true" style="display: none;"></span>
+                                </button>
                             </div>
                         </form>
                     </div>
