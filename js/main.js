@@ -73,8 +73,8 @@ document.getElementById('responseForm').addEventListener('submit', function (eve
         .then(response => response.json())
         .then(data => {
             if (data.result === 'success') {
-                alert('Thank you! Your response has been submitted successfully.');
-                document.getElementById('responseForm').reset(); // Clear the form
+                document.getElementById('successPopup').style.display = 'flex';
+                document.getElementById('responseForm').reset();
             } else {
                 alert('There was an error submitting your response. Please try again.');
             }
@@ -84,6 +84,10 @@ document.getElementById('responseForm').addEventListener('submit', function (eve
             alert('There was a problem with the submission. Please try again.');
         });
 });
+function closePopup() {
+    document.getElementById('successPopup').style.display = 'none';
+    document.getElementById("submitButton").disabled = false; // Re-enable submit button
+}
 
 function disableButton() {
     const button = document.getElementById("submitButton");

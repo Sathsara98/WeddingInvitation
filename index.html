@@ -443,7 +443,7 @@
                                 <div class="form-group col-sm-4">
                                     <input type="tel" class="form-control bg-secondary border-0 py-4 px-3"
                                         placeholder="Phone Number" name="PhoneNumber" id="PhoneNumber"
-                                        pattern="[0-9]{10}" maxlength="10" required />
+                                        pattern="[0-9]{10}" maxlength="10" />
                                 </div>
                             </div>
                             <div class="form-row">
@@ -505,6 +505,18 @@
         </div>
     </div>
     <!-- Footer End -->
+
+
+    <!-- Success Popup -->
+    <div id="successPopup" class="popup-overlay" style="display: none;">
+        <div class="popup-content">
+            <h2>Thank You!</h2>
+            <p>Your response has been submitted successfully.</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+
+
 
 
     <!-- Scroll to Bottom -->
