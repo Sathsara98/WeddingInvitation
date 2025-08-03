@@ -11202,6 +11202,10 @@ a.text-dark:focus {
     max-width: 350px !important;
 
   }
+
+  .theme {
+    padding-top: 48px;
+  }
 }
 
 .popup-overlay {
