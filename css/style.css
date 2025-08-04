@@ -11206,6 +11206,10 @@ a.text-dark:focus {
   .theme {
     padding-top: 48px;
   }
+
+  .carousel-track img {
+    max-width: 50px !important;
+  }
 }
 
 .popup-overlay {
